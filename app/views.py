@@ -44,7 +44,6 @@ class Monthcalendar:
         return calendar_data
 
 class MyCalendar(Monthcalendar, generic.TemplateView):
-    """月間カレンダー、週間カレンダー、スケジュール登録画面のある欲張りビュー"""
     template_name = 'app/month.html'
     model = Schedule
 
